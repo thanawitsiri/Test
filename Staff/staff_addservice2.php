@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 788px;
+	top: 424px;
+	width: 78px;
+	height: 37px;
+	z-index: 1;
+}
+</style>
+<script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+</head>
+
+<body>
+<table width="1035" height="499" border="0"  >
+  <tr>
+    <td height="260" colspan="2" align="center" bgcolor="#000000"><img src="Pic/1.jpg" width="1024" height="258" /></td>
+  </tr>
+  <tr>
+    <td width="189" height="201" align="left" valign="top" bgcolor="#999999"><h2>
+      <input  name="button8" type="submit" id="button8" onclick="MM_goToURL('parent','staff_home.php');return document.MM_returnValue" value="              หน้าแรก                  " width="500" />
+      <br />
+      <input name="button2" type="submit" id="button2" onclick="MM_goToURL('parent','staff_member.php');return document.MM_returnValue" value="        แสดง/ลบข้อมูลลูกค้า       " height="100" />
+      <br />
+      <a href="staff_room.html">
+        <input name="button3" type="submit" id="button3" onclick="MM_goToURL('parent','staff_room.php');return document.MM_returnValue" value="       แสดง/ลบข้อมูลห้องพัก     " />
+        </a> <br />
+      <a href="staff_room.html">
+        <input name="button4" type="submit" id="button4" onclick="MM_goToURL('parent','staff_service.php');return document.MM_returnValue" value="     แสดง/ลบข้อมูลค่าบริการ     " />
+        </a> <br />
+      <input name="บันทึกการจอง" type="submit" id="บันทึกการจอง" onclick="MM_goToURL('parent','staff_showroom.php');return document.MM_returnValue" value="       แสดงห้องพักที่ว่างจอง     " />
+      <br />
+      <a href="staff_showroom1.php">
+        <input name="บันทึกการจอง" type="submit" id="บันทึกการจอง" onclick="MM_goToURL('parent','staff_showroom1.php');return document.MM_returnValue" value="    แสดงห้องพักที่ว่างเข้าพัก     " />
+        </a> <br />
+      <a href="staff_room.html">
+        <input name="button5" type="submit" id="button5" onclick="MM_goToURL('parent','staff_booking_detail.php');return document.MM_returnValue" value="        แสดง/ยกเลิกการจอง       " />
+        </a> <br />
+      <input type="submit" onclick="MM_goToURL('parent','staff_stay.php');return document.MM_returnValue" value="           แสดงการเข้าพัก           " />
+      <input type="submit" onclick="MM_goToURL('parent','staff_payment.php');return document.MM_returnValue" value="         แสดงการรับชำระ           " />
+      <br />
+      <? if($result['Emp_Level'] == 1) { ?>
+      <input type="submit" onclick="MM_goToURL('parent','staff_report.php');return document.MM_returnValue" value="                รายงาน                 " />
+      <? } else { ?>
+      <input type="submit" onclick="MM_goToURL('parent','boss_report.php');return document.MM_returnValue" value="                รายงาน                 " />
+      <? } ?>
+      <? if($result['Emp_Level'] == 2) { ?>
+      <br />
+      <input type="submit" onclick="MM_goToURL('parent','boss_staff.php');return document.MM_returnValue" value="     แสดง/ลบข้อมูลพนักงาน      " />
+      <? }?>
+      <br />
+      <input type="submit" onclick="MM_goToURL('parent','staff_editstaff.php');return document.MM_returnValue" value="        แก้ไขข้อมูลพนักงาน        " />
+      <br />
+      <input type="submit" onclick="MM_goToURL('parent','staff___logout.php');return document.MM_returnValue" value="             ออกจากระบบ            " />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </h2>
+      <p></p></td>
+    <td width="836" height="201" align="center" valign="top" bgcolor="#D8D8D8"><h2>เลือก/ยกเลิกค่าบริการ </h2>
+      <table width="708" height="94" border="1" align="center" bordercolor="black">
+        <tr>
+          <td height="28" colspan="6" align="center" valign="middle">รายการบริการ</td>
+        </tr>
+        <tr>
+          <td width="116" height="28" align="center" valign="middle">รหัสค่าบริการ</td>
+          <td width="165" align="center" valign="middle">รายการ</td>
+          <td width="87" align="center" valign="middle">จำนวน</td>
+          <td width="83" align="center" valign="middle">หน่วยนับ</td>
+          <td width="173" height="28" align="center" valign="middle">ราคาต่อหน่วย (บาท)</td>
+          <td width="44" align="center" valign="middle">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="28" align="center" valign="middle">0001</td>
+          <td align="center" valign="middle">เช่ารถยนต์</td>
+          <td align="center" valign="middle"><label for=""></label>
+            <input name="asdasd" type="text" id="asdasd" value="    1 " size="1" /></td>
+          <td align="center" valign="middle">วัน</td>
+          <td height="28" align="center" valign="middle">800</td>
+          <td align="center" valign="middle"><a href="#">ลบ</a></td>
+        </tr>
+      </table>
+      <p>ราคารวม : 800 บาท</p>
+      <p>&nbsp;</p>
+      <p>
+        <input type="submit" name="button" id="button" value="เพิ่มรายการ" />
+        
+        
+        <input name="button2" type="submit" id="button2" onclick="MM_goToURL('parent','staff_addservice3.php');return document.MM_returnValue" value="บันทึก" />
+        
+        
+        <input type="submit" name="button3" id="button3" value="ยกเลิก" />
+        
+        <input type="submit" name="button4" id="button4" value="คำนวณใหม่" />
+      </p>
+      <p>&nbsp;</p>
+      <h2>
+        <label for="textfield4"></label>
+      </h2></td>
+  </tr>
+  <tr>
+    <td height="28" colspan="2" align="center" valign="middle" bgcolor="#CCCCCC">2016 Toobnaya Homestay All Right Reserved</td>
+  </tr>
+</table>
+</body>
+</html>
